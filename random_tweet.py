@@ -1,6 +1,6 @@
 import sys
 
-from random_tweet_lib import get_random_tweet, format_tweet
+from random_tweet.random_tweet_lib import get_random_tweet, format_tweet
 
 
 def load_credentials(filepath: str) -> dict:
@@ -8,6 +8,7 @@ def load_credentials(filepath: str) -> dict:
     Load a file containing key and secret credentials, separated by a line break (\n)
     Returns a dict with the corresponding credentials
     """
+
     with open(filepath, 'r') as file_resource:
         data = file_resource.read().strip().split('\n')
     return {
@@ -17,6 +18,9 @@ def load_credentials(filepath: str) -> dict:
 
 
 if __name__ == "__main__":
+    """
+    Main entry point for the command line application
+    """
 
     term = ""
 
@@ -38,7 +42,7 @@ if __name__ == "__main__":
     tweet = get_random_tweet(term, credentials)
 
     if not tweet:
-        print("No tweets were found with that search term. You could try another search again.")
+        print("No tweets were found with that search term. You can try a different term or try again later.")
         exit(1)
 
     print(format_tweet(tweet))

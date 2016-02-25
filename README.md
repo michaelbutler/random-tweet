@@ -4,7 +4,7 @@ Get a random tweet from Twitter based on an input keyword.
 
 ## Prerequisites:
 
-- Python 3.x
+- Python 3.x (developed on 3.4.3+)
 - httplib2==0.9.2
 - requests==2.9.1
 - urllib3==1.14
@@ -38,6 +38,15 @@ python random_tweet.py apple
 ```
 @username_here: An apple a day #try2 #crashed (@ 11 Penn Plaza in New York, NY) https://t.co/yyy https://t.co/zzz
 media: https://pbs.twimg.com/media/Cb1eILsWAAAXmDj.jpg
+```
+
+
+## Tests
+
+To run basic tests,
+
+```
+./run_tests.sh
 ```
 
 ## License
