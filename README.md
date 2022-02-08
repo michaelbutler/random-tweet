@@ -5,12 +5,10 @@ Get a random tweet from Twitter based on an input keyword.
 ## Prerequisites:
 
 - Python 3.x (developed on 3.4.3+)
-- httplib2==0.9.2
-- requests==2.9.1
-- urllib3==1.14
-- File named "credentials" in same directory, containing twitter key & secret separated by line break (\n)
+- Some pip libraries, installable with the command below
+- File named `credentials` in same directory, containing twitter key & secret separated by line break (\n)
 
-Use pip install -r requirements.txt to install dependencies.
+Run `pip install -r requirements.txt` to install these dependencies.
 
 Example credentials file:
 
